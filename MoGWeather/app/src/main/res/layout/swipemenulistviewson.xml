@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/autoposition_selected"/>
+
+    <TextView
+        android:id="@+id/findcity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="name"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+    <Button
+        android:id="@+id/openbutton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/deletbutton"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="OPEN"
+        android:textStyle="italic"
+        android:shadowColor="#ff000000"
+        android:shadowRadius="10"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:background="@color/transparent"
+        />
+    <Button
+        android:id="@+id/deletbutton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="DELETE"
+        android:textStyle="italic"
+        android:shadowColor="#ff000000"
+        android:shadowRadius="10"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:background="@color/transparent"
+        />
+
+</RelativeLayout>

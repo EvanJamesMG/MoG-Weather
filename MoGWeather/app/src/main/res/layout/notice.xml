@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <ImageView
+        android:id="@+id/noticeimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/notictemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/noticeimg"
+        android:layout_marginLeft="15dp"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/noticeweather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_toRightOf="@+id/notictemperature"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        />
+    <ImageView
+        android:id="@+id/noticeautopositonImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/noticeweather"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_1"/>
+    <TextView
+        android:id="@+id/noticecity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/noticeautopositonImg"
+        android:layout_marginLeft="3dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/noticepublictime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/noticecity"
+        android:layout_marginLeft="35dp"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

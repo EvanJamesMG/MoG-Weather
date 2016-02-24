@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <LinearLayout
+        android:id="@+id/partone"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/textone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/img_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="地点选择"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/textone"
+            android:id="@+id/autopositonPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/autopositonImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/autoposition_selected"/>
+            <TextView
+                android:id="@+id/autopositonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/autopositonImg"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+            <Button
+                android:id="@+id/autopositionOpenBtn"
+                android:text="OPEN"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic"
+                android:shadowColor="#ff000000"
+                android:shadowRadius="10"
+                android:shadowDx="10"
+                android:shadowDy="10"/>
+
+        </RelativeLayout>
+        <!--新添加的部分-->
+        <!--第二部分ListView显示所添加的城市-->
+        <ListView
+            android:id="@+id/CityListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            />
+
+    </LinearLayout>
+
+
+    <!--第三部分一些常用的设置-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/partone"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/setting"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="常用设置"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <!--<ImageView-->
+            <!--android:id="@+id/one"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_1" />-->
+
+            <TextView
+                android:id="@+id/tx1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="自动定位"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <com.example.evanjames.mogweather.activity.SwitchView
+                android:id="@+id/view_switch1"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/two"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_2" />-->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="自动更新"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <com.example.evanjames.mogweather.activity.SwitchView
+                android:id="@+id/view_switch2"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/four"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_4" />-->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="通知栏显示"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <com.example.evanjames.mogweather.activity.SwitchView
+                android:id="@+id/view_switch4"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/four"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/img_4" />-->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="摇一摇更换背景"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <com.example.evanjames.mogweather.activity.SwitchView
+                android:id="@+id/view_switch3"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" >-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/five"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:src="@drawable/img_5" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_toRightOf="@id/five"-->
+        <!--android:text="第5个Item"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="20sp" />-->
+        <!--</RelativeLayout>-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>
