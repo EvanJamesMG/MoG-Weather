@@ -11,3 +11,4 @@ MoG天气，随时随地获取最新天气<br>
 MoG天气，令你随时随地获取最新天气，方便你的生活。<br>
 MoG天气可以提供全面而详细的天气数据，舒适而流畅的操作体验，具有清新亮丽的界面，丰富的附加功能，它定会成为你手机里必不可少的一款软件。<br>
 ## Screenshot
+![](https://github.com/EvanJamesMG/MoG-Weather/blob/master/all.png)  
